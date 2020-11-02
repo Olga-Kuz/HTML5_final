@@ -1,0 +1,308 @@
+@font-face {
+    font-family: raleway;
+    src: url(../font/raleway-regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../font/raleway-extra-bold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../font/raleway-semi-bold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../font/raleway-medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../font/raleway-bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../font/montserrat-light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../font/montserrat-regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+$ralevay-stack: 'ralevay',
+'arial',
+sans-serif;
+$montserrat-stack: 'montserrat',
+'arial',
+sans-serif;
+
+body {
+    margin: 0px;
+}
+
+.header {
+    margin: 0;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('../../img/photo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+
+    &-wrp {
+        padding: 40px 0 285px 0;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 8px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: $ralevay-stack;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+
+    &:hover {
+        color: #c7b299;
+    }
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-nav {
+        margin: 0 40px;
+
+        &_list {
+            display: flex;
+            flex-wrap: wrap;
+
+            &_item {
+                list-style-type: none;
+                margin: auto 15px;
+                font-family: $montserrat-stack;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 14px;
+
+                &:hover {
+                    color: #c7b299;
+                }
+            }
+        }
+    }
+
+    &-basket {
+        background-color: transparent;
+        border: none;
+        margin: 0 15px;
+    }
+
+    &-form {
+        margin: 0 0 0 13px;
+    }
+
+    &-search {
+        display: none;
+        background-color: transparent;
+    }
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    &-btn1 {
+        background-color: transparent;
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 40px;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 52px;
+            height: 0px;
+            border: 2px solid white;
+            transform: rotate(-225deg);
+            position: absolute;
+            top: 0px;
+            left: 0;
+            opacity: 0.5;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 52px;
+            height: 0px;
+            border: 2px solid white;
+            transform: rotate(225deg);
+            position: absolute;
+            top: 38px;
+            left: 0;
+            opacity: 0.5;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            border: 2px solid #c7b299;
+        }
+    }
+
+    &-detail {
+        text-align: center;
+        max-width: 50%;
+
+        &_uptitle {
+            font-family: $ralevay-stack;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 36px;
+            margin: 0 0 15px 0;
+        }
+
+        &_title {
+            font-family: $ralevay-stack;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 52px;
+            margin: 0 0 20px 0;
+        }
+
+        &_text {
+            font-family: $montserrat-stack;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 14px;
+            margin: 0 0 50px 0;
+        }
+
+        &_btn {
+            display: block;
+            box-sizing: border-box;
+            margin: 0 auto;
+            width: 170px;
+            padding: 15px;
+            box-shadow: inset 0 -3px 0 #736357;
+            border-radius: 3px;
+            background-color: #998675;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-family: $ralevay-stack;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 14px;
+
+
+            &:hover {
+                color: #998675;
+                background-color: white;
+            }
+        }
+    }
+
+    &-btn2 {
+        background-color: transparent;
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 40px;
+        position: relative;
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 52px;
+            height: 0px;
+            border: 2px solid white;
+            transform: rotate(225deg);
+            position: absolute;
+            top: 0px;
+            left: 0;
+            opacity: 0.5;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 52px;
+            height: 0px;
+            border: 2px solid white;
+            transform: rotate(-225deg);
+            position: absolute;
+            top: 38px;
+            left: 0;
+            opacity: 0.5;
+        }
+
+        &:hover::before,
+        &:hover::after {
+            border: 2px solid #c7b299;
+        }
+    }
+}
+
+.pagination {
+    width: 100%;
+    height: 20px;
+    margin: 320px 0 40px 0;
+
+    display: flex;
+    justify-content: center;
+
+    &-item {
+        display: block;
+        width: 9px;
+        height: 9px;
+        margin: 0 8px;
+        background-color: #ccc;
+        border-radius: 50%;
+        border: 2px solid transparent;
+
+        &:hover {
+            background-color: transparent;
+            border: 2px solid #ccc;
+            transform: scale(1.2);
+        }
+    }
+}
