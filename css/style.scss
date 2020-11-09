@@ -54,13 +54,14 @@ $montserrat-stack: 'montserrat',
 'arial',
 sans-serif;
 
+
 body {
     margin: 0px;
 }
 
 .header {
     margin: 0;
-    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('../../img/photo.jpg');
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('../img/photo.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -76,7 +77,6 @@ body {
 
 .container {
     max-width: 1170px;
-    padding: 0 8px;
     margin: 0 auto;
 }
 
@@ -213,6 +213,7 @@ body {
             font-style: normal;
             font-size: 14px;
             margin: 0 0 50px 0;
+            line-height: 24px;
         }
 
         &_btn {
@@ -286,7 +287,6 @@ body {
     width: 100%;
     height: 20px;
     margin: 320px 0 40px 0;
-
     display: flex;
     justify-content: center;
 
@@ -305,4 +305,170 @@ body {
             transform: scale(1.2);
         }
     }
+}
+
+
+.product {
+    padding: 80px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+    &-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 10px 0 10px;
+        box-sizing: border-box;
+        width: 266px;
+
+        &_img {
+            margin: 0;
+            fill: #555555;
+        }
+
+        &-title {
+            display: block;
+            font-family: $ralevay-stack;
+            font-weight: 600;
+            font-size: 22px;
+            color: #555555;
+            width: 100%;
+            margin: 30px 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        &_text {
+            color: #8c8c8c;
+            flex-flow: $montserrat-stack;
+            font-weight: 300;
+            font-size: 14px;
+            text-align: center;
+            margin: 0 0 30px 0;
+            line-height: 24px;
+        }
+    }
+
+    &-item::after {
+        content: '';
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #f1eee9;
+
+    }
+
+    &-item:hover .product-item_img {
+        fill: #c7b299;
+    }
+
+    &-item:hover .product-item-title {
+        color: #c7b299;
+    }
+
+    &-item:hover:after {
+        background-color: #c7b299;
+    }
+}
+
+.screenshots {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 0 0;
+    background-color: #fbfaf8;
+
+    &-title {
+        font-family: $ralevay-stack;
+        font-weight: 600;
+        font-size: 30px;
+        color: #555555;
+        text-align: center;
+    }
+
+    &-text {
+        font-family: $montserrat-stack;
+        font-size: 16px;
+        font-weight: 300;
+        color: #8c8c8c;
+        max-width: 757px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto 40px;
+        line-height: 28px;
+    }
+
+    &_img {
+        background-image: url(../img/center.jpg), url(../img/left.jpg), url(../img/right.jpg);
+        background-repeat: no-repeat;
+        background-position: center, left, right, ;
+        height: 482px;
+        background-color: #fff;
+
+    }
+}
+
+.purchase {
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    height: 150px;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    &_wrp {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+
+        &_title {
+            text-align: left;
+            font-family: $ralevay-stack;
+            font-size: 28px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        &_text {
+            font-family: $montserrat-stack;
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #615855;
+            margin: 0;
+            padding: 0;
+        }
+
+
+    }
+
+    &_btn {
+        font-family: $ralevay-stack;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: #998675;
+        border-radius: 5px;
+        outline: 0;
+        border: none;
+        padding: 20px;
+
+
+        &:hover {
+            color: #998675;
+            background-color: white;
+        }
+    }
+
+
+}
+
+.waxom {
+    color: #c7b299;
 }
