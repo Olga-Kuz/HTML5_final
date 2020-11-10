@@ -376,10 +376,7 @@ body {
 
 .product-item_text {
   color: #8c8c8c;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: "montserrat", "arial", sans-serif;
-          flex-flow: "montserrat", "arial", sans-serif;
+  font-family: "montserrat", "arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   text-align: center;
@@ -441,7 +438,7 @@ body {
 .screenshots_img {
   background-image: url(../img/center.jpg), url(../img/left.jpg), url(../img/right.jpg);
   background-repeat: no-repeat;
-  background-position: center, left, right;
+  background-position: center, bottom left, bottom right;
   height: 482px;
   background-color: #fff;
 }
@@ -453,6 +450,9 @@ body {
   padding: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.purchase_main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,5 +515,121 @@ body {
 
 .waxom {
   color: #c7b299;
+}
+
+.projects {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects_title {
+  font-family: "ralevay", "arial", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  margin: 0 auto 35px auto;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects_text {
+  font-family: "montserrat", "arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects_wrp {
+  width: 100%;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.projects_wrp_btn {
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  background-color: #fff;
+  font-family: "montserrat", "arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+
+.projects_wrp_btn:hover {
+  color: #fff;
+  background-color: #998675;
+}
+
+.projects_box {
+  width: 370px;
+  height: 337px;
+  background-color: #fbfaf8;
+  margin: 0 0 30px 0;
+  padding-bottom: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.projects_box_title {
+  font-family: "ralevay", "arial", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7b299;
+  margin: 30px 0 0px 30px;
+}
+
+.projects_box_tags {
+  font-family: "montserrat", "arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #d1d1d1;
+  display: block;
+  margin: 10px 0 0 30px;
+}
+
+.projects_btn {
+  font-family: "ralevay", "arial", sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #998675;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+  padding: 20px;
+  margin: 0 500px 0;
+}
+
+.projects_btn:hover {
+  color: #998675;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
