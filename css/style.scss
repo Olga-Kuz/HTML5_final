@@ -535,12 +535,30 @@ body {
     }
 
     &_box {
-        width: 370px;
-        height: 337px;
-        background-color: #fbfaf8;
-        margin: 0 0 30px 0;
-        padding-bottom: 30px;
-        box-sizing: border-box;
+        margin-bottom: 30px;
+        text-align: center;
+        position: relative;
+
+        &_container {
+            background-color: #fbfaf8;
+            padding-bottom: 30px;
+            box-sizing: border-box;
+            text-align: left;
+            position: relative;
+            margin-top: -35px;
+            padding: 30px;
+        }
+
+        &_container::before {
+            content: "";
+            border: 15px solid transparent;
+            border-bottom: 15px solid #fbfaf8;
+            ;
+            position: absolute;
+            top: -30px;
+            left: 10px;
+        }
+
 
         &_title {
             font-family: $ralevay-stack;
@@ -548,7 +566,7 @@ body {
             line-height: 1.2;
             font-weight: 500;
             color: #c7b299;
-            margin: 30px 0 0px 30px;
+            margin: 0;
         }
 
         &_tags {
@@ -558,8 +576,58 @@ body {
             font-weight: 300;
             color: #d1d1d1;
             display: block;
-            margin: 10px 0 0 30px;
+            margin: 10px 0 0;
         }
+    }
+
+    &_box:hover .project_img {
+        filter: brightness(50%);
+    }
+
+    &_box:hover .projects_box_container {
+        background-color: #362f2d;
+    }
+
+    &_box:hover .projects_box_container::before {
+        border-bottom: 15px solid #362f2d;
+    }
+
+    &_box:hover .projects_box_title {
+        color: #fff;
+    }
+
+    &_box:hover .projects_box_tags {
+        color: #c7b299;
+    }
+
+    &_box .link,
+    &_box .search {
+        display: none;
+        width: 26px;
+        height: 26px;
+        border: none;
+        fill: #ffffff;
+        position: absolute;
+    }
+
+    &_box .link {
+        top: 40%;
+        left: 40%;
+    }
+
+    &_box .search {
+        top: 40%;
+        left: 50%;
+    }
+
+    &_box:hover .link,
+    &_box:hover .search {
+        display: block;
+    }
+
+    &_box:hover .link:hover,
+    &_box:hover .search:hover {
+        fill: #c7b299;
     }
 
     &_btn {
@@ -583,4 +651,6 @@ body {
             background-color: white;
         }
     }
+
+
 }
