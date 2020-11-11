@@ -93,6 +93,16 @@ body {
 
     &:hover {
         color: #c7b299;
+
+        .logo-svg {
+            fill: #c7b299;
+        }
+    }
+
+
+
+    &-svg {
+        fill: #fff;
     }
 }
 
@@ -128,10 +138,26 @@ body {
         background-color: transparent;
         border: none;
         margin: 0 15px;
+
+        &:hover .menu-basket-svg:hover {
+            fill: #c7b299;
+        }
+
+        &-svg {
+            fill: #fff;
+        }
     }
 
     &-form {
         margin: 0 0 0 13px;
+
+        &:hover .menu-form-svg:hover {
+            fill: #c7b299;
+        }
+
+        &-svg {
+            fill: #fff;
+        }
     }
 
     &-search {
@@ -611,11 +637,13 @@ body {
     }
 
     &_box .link {
+        background-color: transparent;
         top: 40%;
         left: 40%;
     }
 
     &_box .search {
+        background-color: transparent;
         top: 40%;
         left: 50%;
     }
@@ -726,4 +754,36 @@ body {
         display: block;
 
     }
+}
+
+.mobile {
+    padding-top: 80px;
+    background-color: #fbfaf8;
+    display: flex;
+    justify-content: center;
+
+    &-img {
+        height: 616px;
+        background-image: url("../img/iphone_in_hand.png");
+        background-repeat: no-repeat;
+    }
+
+    &-title {
+        font-family: $ralevay-stack;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #555555;
+    }
+
+    &-text,
+    &-list {
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #8c8c8c;
+    }
+
+    &-list {}
 }
