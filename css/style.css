@@ -699,4 +699,81 @@ body {
   color: #998675;
   background-color: white;
 }
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.video-txt-wrp {
+  width: 572px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  text-align: center;
+}
+
+.video-txt-btn {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 45px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.2;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.video-play-btn-icon {
+  margin: 0 auto;
+  fill: #fff;
+}
+
+.video-txt-btn:hover .video-play-btn-icon {
+  fill: #c7b299;
+}
+
+.video-txt-btn:active .video-play-btn-icon {
+  fill: bisque;
+}
+
+.video-txt-title {
+  font-family: "ralevay", "arial", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  display: block;
+}
+
+.video-txt-p {
+  font-family: "montserrat", "arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.video-txt-time {
+  font-family: "montserrat", "arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #c7b299;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
