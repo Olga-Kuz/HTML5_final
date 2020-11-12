@@ -759,11 +759,17 @@ body {
 .mobile {
     padding-top: 80px;
     background-color: #fbfaf8;
-    display: flex;
-    justify-content: center;
+
+
+    &-wrp {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
 
     &-img {
         height: 616px;
+        width: 423px;
         background-image: url("../img/iphone_in_hand.png");
         background-repeat: no-repeat;
     }
